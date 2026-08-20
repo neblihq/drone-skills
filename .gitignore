@@ -5,3 +5,7 @@ CLAUDE.md
 # OS noise
 .DS_Store
 *.swp
+
+# Agent scratch, never published
+notes/
+analysis/
