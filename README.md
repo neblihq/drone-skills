@@ -15,6 +15,8 @@ Claude for the task the skill covers.
 
 ## Status
 
-Early days. First skills in progress: photogrammetry and orthomosaic processing.
+Early days. First skill shipped: [orthomosaic processing](orthomosaic-processing/SKILL.md)
+with OpenDroneMap — tested end to end against a real 172-image mapping flight.
+More photogrammetry workflows in progress.
 
 Maintained by [Nebli](https://nebli.ai).
