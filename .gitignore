@@ -1,0 +1,7 @@
+# Internal working files, never published
+CLAUDE.md
+.claude/
+
+# OS noise
+.DS_Store
+*.swp
