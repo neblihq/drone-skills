@@ -168,6 +168,12 @@ Everything lands inside the project folder:
 | `odm_texturing/odm_textured_model_geo.obj` | Textured 3D mesh | CloudCompare, Blender |
 | `odm_report/report.pdf` | Processing report: camera positions, quality stats | any PDF viewer |
 
+**The outputs belong to root.** Docker runs the container as root, so every file
+ODM writes is root-owned — copying them is fine, but deleting or moving them
+needs `sudo` (`sudo rm -rf my-site`), and a plain `rm -rf` fails partway through
+with a pile of "Permission denied" lines. Worth knowing before the project's
+10–20× disk footprint becomes a problem.
+
 Open the report first — it shows the reconstructed camera positions over the
 survey area, which is the fastest way to confirm the whole flight was used.
 Then the orthomosaic. In QGIS, drag the `.tif` in; it lands at its real-world
